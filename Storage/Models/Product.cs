@@ -4,25 +4,19 @@ namespace Storage.Models
 	public class Product
 	{
         
-        public int Id;
-        public string Name;
-        public int Price;
-        public DateTime Orderdate;
-        public string Category;
-        public string Shelf;
-        public int Count;
-        public string Description;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public DateTime Orderdate { get; set; }
+        public string Category { get; set; }
+        public string Shelf { get; set; }
+        public int Count { get; set; }
+        public string Description { get; set; }
 
-        public Product(int Id, string Name, DateTime Orderdate, string Category, string Shelf, int Count, string Description)
-		{
-            this.Id = Id;
-            this.Name = Name;
-            this.Orderdate = Orderdate;
-            this.Category = Category;
-            this.Shelf = Shelf;
-            this.Count = Count;
-            this.Description = Description;
+        public Product()
+        {
         }
-	}
+    }
+  
 }
 
